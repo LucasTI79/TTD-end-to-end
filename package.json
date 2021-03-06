@@ -1,0 +1,19 @@
+{
+  "name": "aula04-coverage-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LucasTI79/TTD-end-to-end.git",
+  "author": "Lucas <lukasalves271@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn mocha -w --parallel src/*.test.js",
+    "test:cov": "yarn nyc yarn mocha --parallel src/*.test.js"
+  },
+  "dependencies": {
+    "supertest": "6"
+  },
+  "devDependencies": {
+    "mocha": "8",
+    "nyc": "15"
+  }
+}
